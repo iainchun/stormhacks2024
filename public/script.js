@@ -71,65 +71,65 @@ document.getElementById('done').addEventListener('submit', function(event) {
     }
     i++;
   }
-  });
+});
   
-  function displayImageInCell(cellId, imageUrl) {
-    const cell = document.getElementById(cellId);
-    cell.innerHTML = ''; 
-    const img = document.createElement('img');
-    img.src = imageUrl;
-    img.alt = 'Good job';
-    img.style.maxWidth = '100%';
-    cell.appendChild(img);
-  }
+  // function displayImageInCell(cellId, imageUrl) {
+  //   const cell = document.getElementById(cellId);
+  //   cell.innerHTML = ''; 
+  //   const img = document.createElement('img');
+  //   img.src = imageUrl;
+  //   img.alt = 'Good job';
+  //   img.style.maxWidth = '100%';
+  //   cell.appendChild(img);
+  // }
 
 
 
 
-function showForm(formId) {
-  document.getElementById('signup-form').style.display = 'none';
-  document.getElementById('login-form').style.display = 'none';
-  document.getElementById('main-content').style.display = 'none';
-  document.getElementById(formId).style.display = 'block';
-}
+// function showForm(formId) {
+//   document.getElementById('signup-form').style.display = 'none';
+//   document.getElementById('login-form').style.display = 'none';
+//   document.getElementById('main-content').style.display = 'none';
+//   document.getElementById(formId).style.display = 'block';
+// }
 
-function signUp() {
-  const username = document.getElementById('signup-username').value;
-  const password = document.getElementById('signup-password').value;
-  localStorage.setItem('username', username);
-  localStorage.setItem('password', password);
-  alert('Sign-Up Successful! Pleaswwwe log in.');
-  showForm('login-form');
-}
+// function signUp() {
+//   const username = document.getElementById('signup-username').value;
+//   const password = document.getElementById('signup-password').value;
+//   localStorage.setItem('username', username);
+//   localStorage.setItem('password', password);
+//   alert('Sign-Up Successful! Pleaswwwe log in.');
+//   showForm('login-form');
+// }
 
-function gotologIn(){
-  showForm('login-form');
-}
+// function gotologIn(){
+//   showForm('login-form');
+// }
 
-function gotosignUp(){
-  showForm('signup-form');
-}
+// function gotosignUp(){
+//   showForm('signup-form');
+// }
 
-function logIn() {
-  const username = document.getElementById('login-username').value;
-  const password = document.getElementById('login-password').value;
-  const storedUsername = localStorage.getItem('username');
-  const storedPassword = localStorage.getItem('password');
+// function logIn() {
+//   const username = document.getElementById('login-username').value;
+//   const password = document.getElementById('login-password').value;
+//   const storedUsername = localStorage.getItem('username');
+//   const storedPassword = localStorage.getItem('password');
 
-  if (username === storedUsername && password === storedPassword) {
-      alert('Log-In Successful!');
-      showForm('main-content');
-  } else {
-      alert('Invalid credentials. Pleaseqwe try again.');
-      showForm('signup-form');
-  }
-}
+//   if (username === storedUsername && password === storedPassword) {
+//       alert('Log-In Successful!');
+//       showForm('main-content');
+//   } else {
+//       alert('Invalid credentials. Pleaseqwe try again.');
+//       showForm('signup-form');
+//   }
+// }
 
-window.onload = function() {
-  if (localStorage.getItem('username') && localStorage.getItem('password')) {
-      showForm('login-form');
-  } else {
-      showForm('signup-form');
-  }
-}
+// window.onload = function() {
+//   if (localStorage.getItem('username') && localStorage.getItem('password')) {
+//       showForm('login-form');
+//   } else {
+//       showForm('signup-form');
+//   }
+// }
 
