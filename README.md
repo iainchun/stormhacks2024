@@ -36,7 +36,6 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
-    <li><a href="#built-with">Built With</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#team-members">Team Members</a></li>
@@ -64,12 +63,6 @@ Here’s why:
 Of course, our web won't fit all needs so we wish we could add more features.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-* [![Node][Node.js]][Node-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
