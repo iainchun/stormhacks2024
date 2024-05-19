@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My webpage</title>
+<link rel="stylesheet" href="style.css">
+<head>
+    <title>Compact Weekly Schedule</title>
+</head>
+<body>
+    <div id="signup-form" class="form-container">
+        <h2>Sign-Up</h2>
+        <form onsubmit="signUp(); return false;">
+            <label for="signup-username">Username:</label>
+            <input type="text" id="signup-username" required><br>
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" required><br>
+            <button type="submit">Sign Up</button>
+        </form>
+        <form onsubmit="gotologIn(); return false;">
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+
+    <div id="login-form" class="form-container">
+        <h2>Log-In</h2>
+        <form onsubmit="logIn(); return false;">
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" required><br>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" required><br>
+            <button type="submit">Log In</button>
+        </form>
+        <form onsubmit="gotosignUp(); return false;">
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <div id="main-content">
+    <h2>Compact Weekly Schedule</h2>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 - 10:00</td>
+                    <td id="00"></td>
+                    <td id="01"></td>
+                    <td id="02"></td>
+                    <td id="03"></td>
+                    <td id="04"></td>
+                    <td id="05"></td>
+                    <td id="06"></td>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td id="10"></td>
+                    <td id="11"></td>
+                    <td id="12"></td>
+                    <td id="13"></td>
+                    <td id="14"></td>
+                    <td id="15"></td>
+                    <td id="16"></td>
+                </tr>
+                <tr>
+                    <td>11:00 - 12:00</td>
+                    <td id="20"></td>
+                    <td id="21"></td>
+                    <td id="22"></td>
+                    <td id="23"></td>
+                    <td id="24"></td>
+                    <td id="25"></td>
+                    <td id="26"></td>
+                </tr>
+                <tr>
+                    <td>12:00 - 1:00</td>
+                    <td id="30"></td>
+                    <td id="31"></td>
+                    <td id="32"></td>
+                    <td id="33"></td>
+                    <td id="34"></td>
+                    <td id="35"></td>
+                    <td id="36"></td>
+                </tr>
+                <tr>
+                    <td>1:00 - 2:00</td>
+                    <td id="40"></td>
+                    <td id="41"></td>
+                    <td id="42"></td>
+                    <td id="43"></td>
+                    <td id="44"></td>
+                    <td id="45"></td>
+                    <td id="46"></td>
+                </tr>
+                <tr>
+                    <td>2:00 - 3:00</td>
+                    <td id="50"></td>
+                    <td id="51"></td>
+                    <td id="52"></td>
+                    <td id="53"></td>
+                    <td id="54"></td>
+                    <td id="55"></td>
+                    <td id="56"></td>
+                </tr>
+                <tr>
+                    <td>3:00 - 4:00</td>
+                    <td id="60"></td>
+                    <td id="61"></td>
+                    <td id="62"></td>
+                    <td id="63"></td>
+                    <td id="64"></td>
+                    <td id="65"></td>
+                    <td id="66"></td>
+                </tr>
+                <tr>
+                    <td>4:00 - 5:00</td>
+                    <td id="70"></td>
+                    <td id="71"></td>
+                    <td id="72"></td>
+                    <td id="73"></td>
+                    <td id="74"></td>
+                    <td id="75"></td>
+                    <td id="76"></td>
+                </tr>
+                <tr>
+                    <td>5:00 - 6:00</td>
+                    <td id="80"></td>
+                    <td id="81"></td>
+                    <td id="82"></td>
+                    <td id="83"></td>
+                    <td id="84"></td>
+                    <td id="85"></td>
+                    <td id="86"></td>
+                </tr>
+                <tr>
+                    <td>6:00 - 7:00</td>
+                    <td id="90"></td>
+                    <td id="91"></td>
+                    <td id="92"></td>
+                    <td id="93"></td>
+                    <td id="94"></td>
+                    <td id="95"></td>
+                    <td id="96"></td>
+                </tr>
+                <tr>
+                    <td>7:00 - 8:00</td>
+                    <td id="100"></td>
+                    <td id="101"></td>
+                    <td id="102"></td>
+                    <td id="103"></td>
+                    <td id="104"></td>
+                    <td id="105"></td>
+                    <td id="106"></td>
+                </tr>
+                <tr>
+                    <td>8:00 - 9:00</td>
+                    <td id="110"></td>
+                    <td id="111"></td>
+                    <td id="112"></td>
+                    <td id="113"></td>
+                    <td id="114"></td>
+                    <td id="115"></td>
+                    <td id="116"></td>
+                </tr>
+                <tr>
+                    <td>9:00 - 10:00</td>
+                    <td id="120"></td>
+                    <td id="121"></td>
+                    <td id="122"></td>
+                    <td id="123"></td>
+                    <td id="124"></td>
+                    <td id="125"></td>
+                    <td id="126"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- <form action="/submit"> -->
+        <form id = "done">
+            <fieldset>
+                <legend>DONE</legend>
+                <label for="task">Task:</label>
+                <select id="taskdone" name="task" required>
+                </select>
+                <!-- <td><input type="text" name="task" required></td> -->
+                <label for="time">Time:</label>
+                <input id="timedone" name="time" type="text">
+                <input type="submit" value="Update">
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="additional-section">
+        <h3>Update Your Schedule!</h3>
+        <div class="update">
+            <form id="inputForm">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Total Time</th>
+                            <th>Priority</th>
+                            <th>Due Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" id="task" name="task" required></td>
+                            <td><input type="text" id="totalTime" name="total-time" required></td>
+                            <td>
+                                <select id="priority" name="priority" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select id="duedate" name="due-date" required>
+                                    <option value="Monday">Monday</option>
+                                    <option value="Tuesday">Tuesday</option>
+                                    <option value="Wednesday">Wednesday</option>
+                                    <option value="Thursday">Thursday</option>
+                                    <option value="Friday">Friday</option>
+                                    <option value="Saturday">Saturday</option>
+                                    <option value="Sunday">Sunday</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="submit" value="Add Task">
+
+            </form>
+        </div>
+
+        <h3>Pinned Schedule</h3>
+        <div class="pinned-schedule">
+            <form id="pinTask">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Weekday</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" id="taskpin" name="pinned-task" required></td>
+                            <td>
+                                <select name="weekday" id="weekday" required>
+                                    <option value="Monday">Monday</option>
+                                    <option value="Tuesday">Tuesday</option>
+                                    <option value="Wednesday">Wednesday</option>
+                                    <option value="Thursday">Thursday</option>
+                                    <option value="Friday">Friday</option>
+                                    <option value="Saturday">Saturday</option>
+                                    <option value="Sunday">Sunday</option>
+                                </select>
+                            </td>
+                            <td><input type="time" id="startTime" name="start-time" min="9:00" max ="22:00"required></td>
+                            <small>schedule hours 9am to 10pm</small>
+                            <td><input type="time" id="endTime" name="end-time" min="9:00" max ="22:00"  required></td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="submit" value="Pin Task">
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+<script src = "script.js"></script>
+</html>
