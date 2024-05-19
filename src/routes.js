@@ -28,6 +28,7 @@ router.post("/signup", async (req, res) => {
 
   } else {
     const userdata = await collection.insertMany(data);
+    res.render("signupSuccess", { title: 'signupSuccess' });
     console.log(userdata);
   }
 
