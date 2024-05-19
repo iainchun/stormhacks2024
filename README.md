@@ -48,9 +48,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]
-[![Product Name Screen Shot][product-screenshot2]]
-
+  <a href="https://github.com/iainchun/stormhacks2024">
+    <img src="ss.png" alt="Logo" width="150" height="150">
+  </a>
+  <a href="https://github.com/iainchun/stormhacks2024">
+    <img src="ss2.png" alt="Logo" width="150" height="150">
+  </a>
 We created the "Compact Weekly Schedule" project because we needed a tool that efficiently manages our weekly activities and tasks, and we believe it can be very useful scheduling tool
 
 Here’s why:
